@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Week_3_Lab_A</string>
+    <string name="play_btn">Sign Up</string>
+    <string name="replay_btn">Sign In</string>
+</resources>
