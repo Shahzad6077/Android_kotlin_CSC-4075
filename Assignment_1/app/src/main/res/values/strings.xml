@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Assignment_no_1</string>
+    <string name="q1_btn">Q1 Open</string>
+    <string name="q2_btn">Q2 Open</string>
+    <string name="q3_btn">Q3 Open</string>
+    <string name="q4_btn">Q4 Open</string>
+    <string name="takePicture_btn">Take a Picture</string>
+    <string name="q1Title">Take Picture and Show</string>
+
 </resources>
