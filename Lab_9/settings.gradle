@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Async_task_implement_lab_9"

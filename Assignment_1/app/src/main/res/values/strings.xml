@@ -6,5 +6,7 @@
     <string name="q4_btn">Q4 Open</string>
     <string name="takePicture_btn">Take a Picture</string>
     <string name="q1Title">Take Picture and Show</string>
+    <string name="q2Title">Perform Actions on Alarm using Implicit Intent</string>
+
 
 </resources>

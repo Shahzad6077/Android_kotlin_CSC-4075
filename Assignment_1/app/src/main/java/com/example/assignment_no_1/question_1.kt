@@ -11,7 +11,7 @@ import android.widget.Button
 import android.widget.ImageView
 
 class question_1 : AppCompatActivity() {
-    val REQUEST_IMAGE_CAPTURE = 1;
+    val REQUEST_IMAGE_CAPTURE = 1
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question_1)
@@ -23,7 +23,7 @@ class question_1 : AppCompatActivity() {
     }
 
 
-    public fun takePicture() {
+    fun takePicture() {
         val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
         try {
             startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE)
@@ -36,9 +36,9 @@ class question_1 : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
 
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
-            val imageBitmap = data?.extras?.get("data") as Bitmap;
-            val imgView = findViewById<ImageView>(R.id.imageView);
-            imgView.setImageBitmap(imageBitmap);
+            val imageBitmap = data?.extras?.get("data") as Bitmap
+            val imgView = findViewById<ImageView>(R.id.imageView)
+            imgView.setImageBitmap(imageBitmap)
         }
     }
 }

@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val names = arrayOf("Shahzad","Ali","Fahad","Zeeshan","Sheri","Shahzad","Ali","Fahad","Zeeshan","Sheri","Shahzad","Ali","Fahad","Zeeshan","Sheri");
+        val names = arrayOf("Java","Kotlin","Flutter","React Native","Java","Kotlin","Flutter","React Native","Java","Kotlin","Flutter","React Native");
         val numbers = arrayOf("1","2","3","4","5","1","2","3","4","5","1","2","3","4","5")
 
         val recyclerViewObj = findViewById<RecyclerView>(R.id.contactList);
