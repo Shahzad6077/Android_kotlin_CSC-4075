@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_add_tutor_item">
+
+    <fragment
+        android:id="@+id/nav_add_tutor_item"
+        android:name="com.example.findtutor.AddTutor"
+        android:label="@string/menu_add_tutor"
+        tools:layout="@layout/fragment_add_tutor" />
+
+    <fragment
+        android:id="@+id/nav_view_tutor_item"
+        android:name="com.example.findtutor.ViewTutor"
+        android:label="@string/menu_view_tutor"
+        tools:layout="@layout/fragment_view_tutor" />
+
+    <activity
+        android:id="@+id/nav_logout"
+        android:name="com.example.findtutor.MainActivity"
+
+        tools:layout="@layout/activity_main" />
+</navigation>

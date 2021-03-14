@@ -57,3 +57,48 @@ class  ContactRecyclerAdapter(ctx:Context, names:Array<String>,numbers:Array<Str
 
 
 }
+
+
+
+class MyAdapter (ctx:Context,namesArr:Array<String>)
+    : RecylcerView.Adapter<MyAdapter.MyViewHolder>(){
+
+
+    val inflaterInstanceObj = inflaterInstance.from(ctx);
+
+    class MyViewHolder(itemView:View): RecyclerView.ViewHolder(itemView){
+
+        val nameTextRef = itemView.findViewById<TextView>(R.id.name_tx);
+    }
+
+    override fun onCreateViewHolder(parent:ViewGroup,viewType:Int):MyViewHolder{
+
+        val itemLayoutInst = inflaterInstanceObj.inflate(R.layout.my_item_view_layout, parent , false);
+
+        return MyViewHolder(itemLayoutInst);
+    }
+
+    override fun onBindViewHolder(holder:MyViewHolder,position:Int):{
+        holder.nameTextRef.text = namesArr[position]
+    }
+
+    override fun getItemCount():Int{
+        return namesArr.size;
+    }
+
+}
+
+// In our Activity on creation.
+
+override fun onCreate(savedInstanceBundle:Bundle?){
+    super.onCreate(savedInstanceBundle);
+    stContextView(R.layout.my_activity);
+
+
+
+    val namesArr = arrayOf("shamaz","Ali","zeeshan","sheri")
+    val myRecyclerRef = findViewById(R.id.myRecList);
+
+    myRecyclerRef.adapter = MyAdapter(this,names);
+    myRecyclerRef.layoutManager = LinearLyaoutManager.from(this)
+}
