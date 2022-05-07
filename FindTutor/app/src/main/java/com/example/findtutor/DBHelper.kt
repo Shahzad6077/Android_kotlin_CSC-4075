@@ -45,7 +45,7 @@ class DBHelper(private val appContext: Context) :
     fun checkusername(username: String): Boolean {
         val MyDB = this.writableDatabase
         val cursor = MyDB.rawQuery("Select * from users where username = ?", arrayOf(username))
-        return if (cursor.count > 0) true else false
+        return cursor.count > 0
     }
 
     fun checkusernamepassword(username: String, password: String): Boolean {
